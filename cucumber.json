@@ -1,0 +1,15 @@
+{
+  "default": {
+    "paths": ["features/**/*.feature"],
+    "requireModule": ["ts-node/register"],
+    "require": ["src/**/*.ts"],
+    "format": [
+      "summary",
+      "progress-bar",
+      "allure-cucumberjs/reporter"
+    ],
+    "formatOptions": {
+      "resultsDir": "allure-results"
+    }
+  }
+}
