@@ -17,7 +17,7 @@ export class LoginPage {
 
   async navigateToLoginPage(url: string): Promise<void> {
     await this.page.goto(url);
-    await this.page.goto(url, { waitUntil: 'domcontentloaded' });
+    await this.page.goto(url, { waitUntil: 'domcontentloaded' , timeout: 70000 });
   }
 
   async verifyLoginPageUserNameElementIsVisible(): Promise<void> {
@@ -31,12 +31,9 @@ export class LoginPage {
   }
 
   async clickLoginButton(): Promise<void> {
-    // First click to submit the initial form / trigger redirect
     await this.loginButton.click();
     try {
-      // Wait for the auth redirect URL pattern (up to 60s)
-      await this.page.waitForURL('**/auth/v4.2/authentication-code**', { timeout: 60000 });
-      // Perform the second click on the secondary auth form
+      await this.page.waitForURL('**/auth/v4.2/authentication-code**', { timeout: 70000 });
       await this.loginButton.click();
     } catch (error) {
       // Ignore timeout if the redirect doesn't occur (e.g., in scenarios where it lands directly)

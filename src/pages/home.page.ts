@@ -19,4 +19,9 @@ export class HomePage {
     await expect(this.appNameLocator).toHaveText('Homepage', { timeout: 70000 });
   }
 
+  async navigateToPage(url: string): Promise<void> {
+    await this.page.goto(url);
+    await this.page.goto(url, { waitUntil: 'domcontentloaded' , timeout: 70000 });
+  }
+
 }

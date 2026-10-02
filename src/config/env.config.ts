@@ -6,6 +6,9 @@ dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 export const config = {
   baseUrl: process.env.BASE_URL || 'https://www.saucedemo.com',
+  explorerUrl: process.env.EXPLORER_URL || 'https://www.saucedemo.com/explorer',
+  imageUrl: process.env.IMAGE_URL || 'https://www.saucedemo.com/image',
+  sceneUrl: process.env.SCENE_URL || 'https://www.saucedemo.com/scene',
   credentials: {
     standardUser: {
       username: process.env.AUTOMATION_USER || 'standard_user',
