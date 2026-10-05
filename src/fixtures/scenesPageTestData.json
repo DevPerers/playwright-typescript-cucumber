@@ -1,0 +1,20 @@
+{
+    "project": "autoqa1-int",
+    "commentSceneId": "939661",
+    "Scenes": "Scenes",
+    "sceneIdForStoreLink": "939660",
+    "sceneIdForProductGrid":"939659",
+    "sceneIdForProductTable": "939655",
+    "surveyFromDate": "4 September 2025",
+    "surveyToDate": "4 September 2025",
+    "surveyQuestionSceneId": "353037",
+    "fromDateToVisitDetailTest": "18 August 2025",
+    "toDateToVisitDetailTest": "18 August 2025",
+    "fromDateClearAll": "1 Sep 2024",
+    "toDateClearAll": "16 Dec 2024",
+    "toggleProductViewDate": "18 August 2025",
+    "sceneIdForSkuHighlighting": "939813",
+    "sceneIdForWithoutSurveyQuestion": "939813",
+    "fromDateForSceneExport": "September 1, 2025",
+    "toDateForSceneExport": "October 31, 2025"
+}

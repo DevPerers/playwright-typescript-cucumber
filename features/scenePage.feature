@@ -7,7 +7,7 @@ This contains the Scenes page Feature
         And   I navigate to Explorer Scenes page
 
     Scenario: Verify the functionality of the Clear Filters button
-        When  I select a date range from the date picker
+        When  I select the "ClearAll" date range from the date picker
         And   I get the scene grid data count
         And   I open the filter panel
         And   I select "Status" filter option, select the "Completed" value
@@ -16,9 +16,9 @@ This contains the Scenes page Feature
         And   I close the filter panel
         And   I click on "CLEAR FILTERS" button
         Then  I see that the grid row count reverts to the original count before filters are applied
-    
+    @Image
     Scenario: Verify image export for Stitched Images and validate Resource Type, Data Type, Status columns, and processed items count
-        When  I set the date range from the date picker
+        When  I select the "ForSceneExport" date range from the date picker
         And   I open the filter panel
         And   I select "Status" filter option, select the "Completed" value
         And   I get the Scenes grid count
