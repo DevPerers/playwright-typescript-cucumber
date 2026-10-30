@@ -1,7 +1,7 @@
 import { Then, When } from '@cucumber/cucumber';
 import { CustomWorld } from '../utils/custom-world';
 import { ScenePage } from '../pages/scene.page';
-import { exportsOptions } from 'src/support/explorerConstants';
+import { exportsOptions } from '../support/explorerConstants';
 
 When('I select the {string} date range from the date picker', async function (this: CustomWorld, dataKeyPrefix: string) {
     const scenePage = new ScenePage(this.page!);
@@ -14,13 +14,6 @@ When('I select the {string} date range from the date picker', async function (th
     await this.page!.waitForTimeout(2000);
   }
 );
-
-When('I get the scene grid data count', async function (this: CustomWorld) {
-  const scenePage = new ScenePage(this.page!);
-  const count = await scenePage.extractSceneGridCount();
-  this.sceneGridItemCount = count;
-  console.log(`Scene grid data count at first: ${count}`);
-});
 
 // Matches both "I get the scene grid data count" and "I get the Scenes grid count"
 When(/^I get the (?:scene|Scenes) grid (?:data )?count$/, async function (this: CustomWorld) {

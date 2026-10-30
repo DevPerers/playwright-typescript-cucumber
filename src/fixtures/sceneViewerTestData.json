@@ -1,0 +1,17 @@
+{
+  "project": "autoqa1-int",
+  "sceneId": "352912",
+  "Scenes": "Scenes",
+  "productNameOneForSkuHighlighting": "Actoner Mouthwash Other",
+  "productNameTwoForSkuHighlighting": "Colgate Mouthwash Plax Soft Mint Zero Alcohol Bottle 250 ml",
+  "brandIndexForActoner": 0,
+  "brandIndexForColgate": 1,
+  "skuIndexForActoner": 1,
+  "skuIndexForColgate": 0,
+  "store": {
+    "street_Scene": "CALLE POETA EMILIO PRADO, S/N",
+    "city_Scene": "CORDOBA",
+    "state": "ESPAÑA",
+    "Country": "Spain"
+  }
+}

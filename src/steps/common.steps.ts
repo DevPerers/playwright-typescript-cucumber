@@ -32,3 +32,18 @@ Given('I navigate to Explorer Scenes page', { timeout: 70000 }, async function (
     const homePage = new HomePage(this.page!);
     await homePage.navigateToPage( config.sceneUrl);
 });
+
+Given('I navigate to Explorer Visits page', { timeout: 70000 }, async function (this: CustomWorld) {
+    const homePage = new HomePage(this.page!);
+    await homePage.navigateToPage(config.visitsUrl);
+});
+
+Given('I navigate to the User Management application', { timeout: 70000 }, async function (this: CustomWorld) {
+    const homePage = new HomePage(this.page!);
+    await homePage.navigateToPage(config.userManagementUrl);
+});
+
+When('I navigate to Reporting Configuration Explorer page', { timeout: 70000 }, async function (this: CustomWorld) {
+    const homePage = new HomePage(this.page!);
+    await homePage.navigateToPage(config.reportingConfigUrl);
+});

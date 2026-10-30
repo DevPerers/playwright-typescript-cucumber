@@ -1,0 +1,24 @@
+{
+  "commentVisitID": "1427557",
+  "storeNameVisitId": "1425477",
+  "storeLinkVisitId": "1427559",
+  "numberOfVisitInList": 0,
+  "displayTaskVisitId": "1427713",
+  "sceneTypeDisplayNameVisitId": "1427550",
+  "sceneTypeDisplayNameSceneId": "939641",
+  "fromDateVerifySceneCount": "September 3, 2025",
+  "toDateVerifySceneCount": "September 3, 2025",
+  "visitDetailsFromDate": "September 3, 2025",
+  "visitDetailsToDate": "September 3, 2025",
+  "visitIdForWithoutSurveyQuestion": "1427808",
+  "VisitIdForHidePrice": "842948",
+  "columnNameForProductGrid": "price",
+  "rowIdForProductGrid": 3,
+  "store": {
+    "country": "Spain",
+    "street": "AVENIDA JUAN CARLOS I, S/N",
+    "city": "ALCALA DE HENARES",
+    "state": "ESPAÑA",
+    "storeNumber": "2814253-MM"
+  }
+}
